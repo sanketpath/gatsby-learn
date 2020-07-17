@@ -1,6 +1,6 @@
 import React from "react"
 import containerStyles from "../styles/container.module.css"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const ListLink = props => (
   <li>
@@ -9,12 +9,23 @@ const ListLink = props => (
 )
 
 export default function Container({ children }) {
+  const data = useStaticQuery(graphql`
+      query HeaderQuery {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `)
+
   return <div className={containerStyles.container}>
   <header>
-  <h3><Link to="/">SP</Link></h3>
+  <h3><Link to="/">{data.site.siteMetadata.title}</Link></h3>
   <ul>
   <ListLink to="/">Home</ListLink>
   <ListLink to="/about/">About</ListLink>
+  <ListLink to="/blog/">Blog</ListLink>
   <ListLink to="/contact">Contact</ListLink>
   </ul>
   </header>

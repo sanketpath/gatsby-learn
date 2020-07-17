@@ -16,3 +16,46 @@
   list-style: none;
   float: right;
 }
+
+.container img{
+  border-radius: 500px;
+  width: 400px;
+  height: auto;
+}
+
+.container .article {
+    padding: 3rem;
+    background: white;
+    border: 1px solid lightgrey;
+    margin-bottom: 2rem;
+}
+
+.container .articleTitle{
+  display: block;
+  margin: 0 0 1rem 0;
+}
+
+.container .articleMetadata{
+  color: grey;
+}
+
+button{
+    color: #ffffff;
+    background-color: #004498;
+    border: 0px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "PT Sans";
+    font-weight: 500;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid #004498;
+}
+
+button:hover{
+  background-color: #00306c;
+}
+
+H1, H2, H3, H4, H5, h6{
+  margin: 1rem auto;
+}

@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "../components/header"
 import Paragraph from "../components/paragraph"
-import { Link } from "gatsby"
 import Container from "../components/container"
 import styles  from "../styles/about.module.css"
 
