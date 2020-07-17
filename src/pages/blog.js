@@ -12,11 +12,13 @@ export default function Blog({ data }){
   <Header headerText="Blogs" />
   <Paragraph paragraphText="Yay! I was able to fetch my blog articles with GraphQL and sort them in decending order!!!"/>
   {data.allMarkdownRemark.edges.map(({ node }) => (
+    <Link to={node.fields.slug}>
     <div key={node.id} class={containerStyles.article}>
     <h3 class={containerStyles.articleTitle}>{node.frontmatter.title}{""}</h3>
-    <p>{node.excerpt}</p>
+    <p style={{ color:`#3c3c3c` }}>{node.excerpt}</p>
     <span class={containerStyles.articleMetadata}>{node.frontmatter.date} | {node.timeToRead} min read</span>
     </div>
+    </Link>
   ))}
   </Container>
 )}
@@ -31,6 +33,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
           timeToRead

@@ -20,8 +20,8 @@ export default function Container({ children }) {
     `)
 
   return <div className={containerStyles.container}>
-  <header>
-  <h3><Link to="/">{data.site.siteMetadata.title}</Link></h3>
+  <header style={{ marginBottom: `2rem`}}>
+  <h3 style={{ display:`inline`}}><Link to="/">{data.site.siteMetadata.title}</Link></h3>
   <ul>
   <ListLink to="/">Home</ListLink>
   <ListLink to="/about/">About</ListLink>
