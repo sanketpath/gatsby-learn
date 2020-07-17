@@ -12,7 +12,7 @@ export default function Blog({ data }){
   <Header headerText="Blogs" />
   <Paragraph paragraphText="Yay! I was able to fetch my blog articles with GraphQL and sort them in decending order!!!"/>
   {data.allMarkdownRemark.edges.map(({ node }) => (
-    <Link to={node.fields.slug}>
+    <Link to={node.fields.slug} style={{ display: `inherit`}}>
     <div key={node.id} class={containerStyles.article}>
     <h3 class={containerStyles.articleTitle}>{node.frontmatter.title}{""}</h3>
     <p style={{ color:`#3c3c3c` }}>{node.excerpt}</p>
