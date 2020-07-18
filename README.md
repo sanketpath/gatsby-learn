@@ -33,4 +33,12 @@ I've deployed this project using Netlify. You can view it on [this link](https:/
 
 ---
 
+#### Copyright Content
+The following directories and their contents are Copyright Sanket Pathak. You may not reuse anything therein without my permission:
+
+blog/
+misc-img/
+
+---
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/99275335-8cd2-42bd-9bbf-fb791bf92979/deploy-status)](https://app.netlify.com/sites/sharp-leakey-543ce9/deploys)
