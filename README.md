@@ -37,6 +37,7 @@ I've deployed this project using Netlify. You can view it on [this link](https:/
 The following directories and their contents are Copyright Sanket Pathak. You may not reuse anything therein without my permission:
 
 blog/
+
 misc-img/
 
 ---
