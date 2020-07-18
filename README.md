@@ -5,6 +5,9 @@ I've created this project to learn GatsbyJS and also build my Portfolio + Blog w
 #### Design
 I put together a basic design in Sketch that helped me have some personal goal (instead of just following dummy site building per the tutorial)
 
+![Home page screenshot](https://www.dropbox.com/s/bea9g2se1r1uxf3/gatsby-learn-design-v1.png?dl=0)
+
+
 
 #### Website Link
 I've deployed this project using Netlify. You can view it on [this link](https://sharp-leakey-543ce9.netlify.app)
