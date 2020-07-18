@@ -10,7 +10,7 @@ I put together a basic design in Sketch that helped me have some personal goal (
 I've deployed this project using Netlify. You can view it on [this link](https://sharp-leakey-543ce9.netlify.app)
 
 
-#### Current Work
+#### To Do
 
 **Things to fix**
 - [ ]  Container to Layout
